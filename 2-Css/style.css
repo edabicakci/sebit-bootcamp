@@ -1,0 +1,79 @@
+/* h1{
+    color:red;
+} */
+
+/* .title{
+    color:blue !important;
+}
+
+#backend{
+    background-color: blueviolet;
+    color:white;
+}
+
+h1, p, h2, h3{
+    text-align: center;
+    color:red !important;
+} */
+
+
+.dotted {
+    border-style: dotted;
+    /*border-width: thin;*/
+    /*border-width: medium;*/
+    /*border-width: thick;*/
+}
+
+.dashed {
+    border-style: dashed;
+    /*border-width: 4px;*/
+}
+
+.solid {
+    border-style: solid;
+}
+
+.double {
+    border-style: double;
+    /*border-width: 10px 2px 5px 3px;*/
+}
+
+.groove {
+    border-style: groove;
+}
+
+.ridge {
+    border-style: ridge;
+}
+
+.inset {
+    border-style: inset;
+}
+
+.outset {
+    border-style: outset;
+}
+
+.none {
+    border-style: none;
+}
+
+.hidden {
+    border-style: hidden;
+}
+
+
+.mix {
+    border-style: dotted dashed solid double;
+}
+
+.frt{
+    margin: 50px 0px 50px 20px;
+    border: 1px solid red;
+    padding: 50px 15px 40px 10 px;
+}
+
+.prg{
+    padding: 20px 15px;
+   
+}

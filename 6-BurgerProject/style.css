@@ -7,6 +7,19 @@
   padding: 0px 15px;
 }
 
+.banner{
+  background-image: url('banner.jpg'); 
+  height: 400px; 
+  position: relative;
+}
+
+.bannerDiv{
+  position:absolute ; 
+  top: 30px; 
+  text-align: center; 
+  width: 100%
+}
+
 .headerLink {
   text-decoration: none;
   color: black;
@@ -39,6 +52,12 @@
 
 .imgDiv p {
   padding: 0px 20px;
+}
+
+.imgDiv .pricePurchaseDiv{
+  display: flex; 
+  flex-direction:column; 
+  align-items: center;
 }
 
 .price {

@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* height: 70px; */
+  height: auto;
+  background-color: pink;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.banner {
+  background-image: url("banner.jpg");
+  height: 400px;
+  position: relative;
+}
+
+.bannerDiv {
+  position: absolute;
+  top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.headerLink {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin-right: 13px;
+}
+
+.imgMainDiv {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  flex-wrap: wrap;
+}
+
+.imgDiv {
+  border: 1px dashed black;
+  /* width: 200px; */
+  border-radius: 30px;
+  /* margin-right: 30px; */
+  margin: 20px 0px;
+}
+
+.imgDiv img {
+  border-radius: 30px 30px 0px 0px;
+  width: 100%;
+}
+
+.imgDiv h3 {
+  text-align: center;
+  color: red;
+}
+
+.imgDiv p {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.imgDiv .pricePurchaseDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price {
+  color: red;
+  text-align: center;
+  font-size: 28px;
+}
+
+.imgDiv button {
+  border: none;
+  background-color: green;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 15px;
+  margin: 30px;
+  text-align: center;
+  width: 100px;
+}
+
+.imgResDiv {
+  flex: 25%;
+}
+
+.footer {
+  background-color: orange;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: center; yatay hizalama */
+  align-items: center; /*dikey hizalama */
+  color: cyan;
+  margin-top: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footerList {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.mobileIcon{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobileIcon {
+    display: block;
+  }
+
+  .headerImgDiv {
+    display: none;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .mobileLink {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobileLinlDiv {
+    display: none;
+  }
+}

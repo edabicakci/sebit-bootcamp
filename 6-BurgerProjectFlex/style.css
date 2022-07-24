@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -31,13 +34,15 @@
   display: flex;
   justify-content: center;
   margin: 30px 0px;
+  flex-wrap: wrap;
 }
 
 .imgDiv {
   border: 1px dashed black;
-  width: 200px;
+  /* width: 200px; */
   border-radius: 30px;
-  margin-right: 30px;
+  /* margin-right: 30px; */
+  margin: 20px;
 }
 
 .imgDiv img {
@@ -52,6 +57,7 @@
 
 .imgDiv p {
   padding: 0px 20px;
+  text-align: center;
 }
 
 .imgDiv .pricePurchaseDiv{
@@ -77,6 +83,10 @@
   width: 100px;
 }
 
+.imgResDiv{
+  flex: 25%;
+}
+
 .footer {
   background-color: orange;
   height: 80px;
@@ -90,11 +100,11 @@
 
 .footer a {
   text-decoration: none;
-
 }
 
 .footerList{
     list-style: none;
+    padding-left: 0px;
 }
 
 /* for mobile*/
@@ -104,25 +114,35 @@
     flex-direction: column;
   }
 
+  .imgResDiv{
+    flex: 100%;
+  }
+
   .imgDiv {
-    width: 100%;
     margin-bottom: 30px;
   }
   .footer{
-    width: 100%;
+    /* height: 200px; */
+    height: auto;
+    flex-direction: column;
+  }
+
+  .footer li{
+    display: inline-block;
+    /* display: flex;  flex daha iyi digerinde margin vs ugrasmak gerekir. */ 
+    margin: 5px;
+  }
+  .imgDiv p{
+    text-align: center;
   }
 }
 
 /* for tablet */
 
 @media only screen and (min-width: 600px) and (max-width: 989px)  {
-  .imgMainDiv {
-    flex-wrap: wrap;
-  }
-
-  .imgDiv {
-    width: 40%;
-    margin: 30px 30px 30px 0;
+ 
+ .imgResDiv{
+    flex: 50%;
   }
   .footer{
     width: 100%;
